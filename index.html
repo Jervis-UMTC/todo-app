@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <h1>
+        <i class="fas fa-check-circle"></i>
+        Todo List
+      </h1>
+      <p id="date">
+        Date
+      </p>
+    </header>
+
+    <div class="todo-input">
+      <input type="text" id="todo-input" placeholder="What do you need to do?">
+      <button id="add-todo-btn">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <div class="filters">
+      <span class="filter active" data-filter="all">All</span>
+      <span class="filter" data-filter="active">Active</span>
+      <span class="filter" data-filter="completed">Completed</span>
+    </div>
+
+    <div class="todo-container">
+      <ul id="todo-list">
+        <li>
+          <input type="checkbox" class="todo-checkbox">
+          <span class="todo-text">Sample Task</span>
+        </li>
+        <li>
+          <input type="checkbox" class="todo-checkbox">
+          <span class="todo-text">Sample Task</span>
+        </li>
+        <li>
+          <input type="checkbox" class="todo-checkbox">
+          <span class="todo-text">Sample Task</span>
+        </li>
+        <li>
+          <input type="checkbox" class="todo-checkbox">
+          <span class="todo-text">Sample Task</span>
+        </li>
+        <li>
+          <input type="checkbox" class="todo-checkbox">
+          <span class="todo-text">Sample Task</span>
+        </li>
+        <li>
+          <input type="checkbox" class="todo-checkbox">
+          <span class="todo-text">Sample Task</span>
+        </li>
+        <li>
+          <input type="checkbox" class="todo-checkbox">
+          <span class="todo-text">Sample Task</span>
+        </li>
+        <li>
+          <input type="checkbox" class="todo-checkbox">
+          <span class="todo-text">Sample Task</span>
+        </li>
+      </ul>
+
+      <div class="empty-state hidden">
+        <i class=" fas fa-clipboard"></i>
+        <p>No tasks here yet</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p id="items-left">3 tasks left</p>
+      <button class="clear-completed-btn">
+        Clear Completed
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
